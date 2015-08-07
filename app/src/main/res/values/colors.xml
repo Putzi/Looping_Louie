@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red_off_normal">#F44336</color>
+    <color name="red_off_hover">#E53935</color>
+    <color name="red_off_pressed">#D32F2F</color>
+
+    <color name="green_on_normal">#4CAF50</color>
+    <color name="green_on_hover">#43A047</color>
+    <color name="green_on_pressed">#388E3C</color>
+
+    <color name="blue_grey_font">#263238</color>
+</resources>

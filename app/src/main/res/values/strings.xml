@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Looping Louie</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="off">Aus</string>
+    <string name="on">Ein</string>
+
+    <string name="speed_level_slow">Langsam</string>
+    <string name="speed_level_medium">Mittel</string>
+    <string name="speed_level_fast">Schnell</string>
+</resources>
