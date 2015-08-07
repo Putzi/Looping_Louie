@@ -9,12 +9,13 @@
     <Button
         android:layout_width="@dimen/box_size"
         android:layout_height="@dimen/box_size"
-        android:text="Off"
-        android:id="@+id/buttonOnOff"
-        android:layout_marginLeft="142dp"
+        android:text="@string/off"
+        android:id="@+id/ButtonOnOff"
+        android:textSize="50sp"
+        android:textColor="@color/blue_grey_font"
+        android:background="@drawable/button_on_off"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:textSize="50sp"
-        android:textColor="@color/blue_grey_font" />
+        android:layout_marginLeft="160dp" />
 
 </RelativeLayout>

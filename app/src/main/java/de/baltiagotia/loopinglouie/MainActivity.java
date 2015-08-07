@@ -1,9 +1,12 @@
 package de.baltiagotia.loopinglouie;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +14,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Button buttonOnOff = (Button) findViewById(R.id.ButtonOnOff);
+        buttonOnOff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnOff.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (buttonOnOff.isSelected()) {
+                            buttonOnOff.setSelected(false);
+                            buttonOnOff.setText(getResources().getString(R.string.off));
+                        } else {
+                            buttonOnOff.setSelected(true);
+                            buttonOnOff.setText(getResources().getString(R.string.on));
+                        }
+                    }
+                }, 150);
+
+            }
+        });
     }
 
     @Override
